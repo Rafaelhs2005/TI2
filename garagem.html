@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Garagem</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .garagem-info {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        
+        .garagem-info h2 {
+            margin-top: 0;
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .info-item {
+            margin-bottom: 10px;
+        }
+        
+        .carros-list {
+            margin-top: 30px;
+        }
+        
+        .carros-list h2 {
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        .carro-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .carro-item:last-child {
+            border-bottom: none;
+        }
+        
+        .carro-placa {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .add-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto 0;
+            padding: 10px;
+            background-color: #2ecc71;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .add-btn:hover {
+            background-color: #27ae60;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 8px 15px;
+            background-color: #95a5a6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .back-btn:hover {
+            background-color: #7f8c8d;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="main.html" class="back-btn">← Voltar</a>
+        
+        <h1>Detalhes da Garagem</h1>
+        
+        <!-- Informações da garagem -->
+        <div class="garagem-info">
+            <h2>Garagem Principal</h2>
+            <div class="info-item">
+                <strong>Endereço:</strong> Rua das Flores, 123 - São Paulo/SP
+            </div>
+            <div class="info-item">
+                <strong>Vagas disponíveis:</strong> 1 de 2
+            </div>
+            <div class="info-item">
+                <strong>Tipo:</strong> Coberta
+            </div>
+            <div class="info-item">
+                <strong>Dimensões:</strong> 5m x 2.5m
+            </div>
+            <div class="info-item">
+                <strong>Observações:</strong> Portão eletrônico, acesso com controle
+            </div>
+        </div>
+        
+        <!-- Lista de carros -->
+        <div class="carros-list">
+            <h2>Veículos nesta garagem</h2>
+            
+            <!-- Exemplo de carros cadastrados -->
+            <div class="carro-item">
+                <span class="carro-placa">ABC-1D23</span>
+            </div>
+            
+            <div class="carro-item">
+                <span class="carro-placa">XYZ-9F87</span>
+            </div>
+            
+            <!-- Estado vazio (pode ser mostrado quando não há carros) -->
+            <!-- <div class="empty-state">
+                <p>Nenhum veículo cadastrado nesta garagem.</p>
+            </div> -->
+        </div>
+        
+        <!-- Botão para adicionar novo veículo -->
+        <a href="#" class="add-btn">+ Adicionar Veículo</a>
+    </div>
+</body>
+</html>
