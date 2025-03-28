@@ -18,7 +18,7 @@ public class Produto {
 		preco = 0.00F;
 		quantidade = 0;
 		dataFabricacao = LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS);
-		dataValidade = LocalDate.now().plusMonths(6); // o default é uma validade de 6 meses.
+		dataValidade = LocalDate.now().plusMonths(6); 
 	}
 
 	public Produto(int id, String descricao, float preco, int quantidade, LocalDateTime fabricacao, LocalDate v) {
